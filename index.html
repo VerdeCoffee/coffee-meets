@@ -86,7 +86,7 @@
     .hero {
       position: sticky; top: 0;
       height: 100vh; height: calc(var(--vh, 1vh) * 100);
-      overflow: hidden;
+      overflow: clip;
       background: var(--forest);
     }
 
@@ -218,7 +218,7 @@
     .series-all-stage {
       position: sticky; top: 0;
       height: 100vh; height: calc(var(--vh, 1vh) * 100);
-      overflow: hidden;
+      overflow: clip;
       background: var(--cream);
     }
 
@@ -440,6 +440,7 @@
     .footer-copy { font-size: 11px; color: var(--gray-mid); letter-spacing: 0.05em; }
 
     /* ─── RESPONSIVE ─── */
+    .sp-br { display: none; }
     @media (max-width: 960px) {
       .stage-story { padding: 0 80px 0 56px; }
     }
@@ -456,6 +457,10 @@
       .series-interlude   { padding: 56px 20px 0; }
       footer { padding: 24px 20px; flex-direction: column; gap: 10px; text-align: center; }
       .s-cta-buy, .s-cta-soon { padding: 18px 36px; }
+      .s-line { font-size: 12px; line-height: 1.75; letter-spacing: 0.04em; margin-bottom: 18px; }
+      .s-sub  { font-size: 13px; }
+      .hc-body { letter-spacing: 0.05em; }
+      .sp-br { display: inline; }
     }
   </style>
 </head>
@@ -488,10 +493,10 @@
         <p class="hc-q1" id="hc-q1">「コーヒーには、</p>
         <p class="hc-q2" id="hc-q2">まだ誰も引き出していない可能性がある。」</p>
         <div class="hc-rule" id="hc-rule"></div>
-        <p class="hc-body" id="hc-b1">Verde Coffeeのバリスタが、長年探求してきた言葉です。</p>
-        <p class="hc-body" id="hc-b2">苦みと甘みを極めた先に、<strong>まだ出会っていない一杯があった。</strong></p>
-        <p class="hc-body" id="hc-b3">Coffee Meets.は、その可能性を一杯ずつ形にするシリーズです。</p>
-        <p class="hc-body" id="hc-b4">コーヒーが何かに出会うたびに、世界が、少し広がる。</p>
+        <p class="hc-body" id="hc-b1">Verde Coffeeのバリスタが、<br class="sp-br">長年探求してきた言葉です。</p>
+        <p class="hc-body" id="hc-b2">苦みと甘みを極めた先に、<br class="sp-br"><strong>まだ出会っていない一杯があった。</strong></p>
+        <p class="hc-body" id="hc-b3">Coffee Meets.は、その可能性を<br class="sp-br">一杯ずつ形にするシリーズです。</p>
+        <p class="hc-body" id="hc-b4">コーヒーが何かに出会うたびに、<br class="sp-br">世界が、少し広がる。</p>
       </div>
     </section>
   </div>
